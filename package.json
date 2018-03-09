@@ -1,0 +1,23 @@
+{
+  "name": "node-status-check",
+  "version": "0.0.1",
+  "description": "Status check helper that responds to http requests",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "."
+  },
+  "keywords": [
+    "status",
+    "check",
+    "http",
+    "helper",
+    "monit",
+    "stats"
+  ],
+  "author": "lolwho",
+  "license": "MIT"
+}
