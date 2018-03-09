@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "."
+    "url": "https://github.com/lolwhoami/node-status-check"
   },
   "keywords": [
     "status",
