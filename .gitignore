@@ -1,0 +1,4 @@
+.tmp
+logs
+npm-debug.log
+test.js
