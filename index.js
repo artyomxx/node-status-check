@@ -26,14 +26,12 @@ module.exports = (cb, options = {}) => {
 
 		return Promise.resolve(cb())
 		.catch(() => false)
-		.then(result => {
-			let mode = result ? 'pass' : 'fail';
-
-			if(options[mode].code)
-				return r.status(res, options[mode].code, options[mode].text);
-			else
-				return r.text(res, options[mode]);
-		});
+		.then(r => r ? 'pass' : 'fail')
+		.then(r => options[r])
+		.then(r => r.code
+			? r.status(res, r.code, r.text)
+			: r.text(res, r)
+		);
 	};
 
 	return require('http')
